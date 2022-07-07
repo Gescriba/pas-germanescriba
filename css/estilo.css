@@ -1,0 +1,102 @@
+<!-- Contenido En General-->
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.fondo{
+    background-image: url(../recursos/fondorojo.png);
+}
+.nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.encabezado{
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    Font-size: 20px;
+    position:sticky;
+    top:0px;
+}
+.encabezado__imagen{    
+    width: 80px;
+    height: 50px;
+    padding: 10px;
+}
+.encabezado__lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    list-style: none;
+}
+.encabezado__lista--items{
+    padding: 5px;
+}
+.main{
+    display: flex;  
+}
+.aside{
+    position:sticky;
+    float: right;
+    padding: 100px;
+}
+.aside_texto{
+    font-size: larger;
+    margin: 10px;
+    cursor: pointer;    
+}
+.aside__ws{ 
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer{
+    font-family: 'Franklin Gothic Medium';
+    Font-size: 25px;
+}
+
+<!-- Contenido de la pagina Index-->
+.main__fotoperfil{
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.section{
+    display: flex;  
+}
+.section2__main--titulo1{
+    font-family: 'Franklin Gothic Medium';
+    Font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.section2__main--titulo2{
+    font-family: 'Franklin Gothic Medium';
+    Font-size: 40px;    
+    text-align: center;
+    padding: 20px;
+}
+.section2__main--aseguradoras{
+    width: 240px;
+    height: 240px;  
+    padding: 0px 70px;
+}
+
+<!-- Contenido de la pagina Automotor-->
+.main__automotor{
+    padding: 10px 10px 10px 10px;   
+    width: 400px;
+    height: 600px;  
+}
+
+.contacto{
+    text-align: center;
+}
+.boton{
+    cursor: pointer;
+}
