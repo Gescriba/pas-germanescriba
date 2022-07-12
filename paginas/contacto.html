@@ -9,24 +9,23 @@
 </head>
 <body class="fondo">
     <header class="encabezado"><!-- Encabezado -->
-        <nav class="nav"> <!-- Navegacion/Menu -->
+        <nav class="encabezado_nav"> <!-- Navegacion/Menu -->
             <img src="../recursos/germanescriba.jpg" class="encabezado__imagen">
             <ul class="encabezado__lista">
-                <li class="encabezado__lista--items"><a href="../index.html">Volver al Index</a></li>
-                <li class="encabezado__lista--items"><a href="../paginas/automotor.html">Seguros Automotores</a></li>
-                <li class="encabezado__lista--items"><a href="../paginas/motos.html">Seguros de Motos</a></li> 
-                <li class="encabezado__lista--items"><a href="../paginas/hogar.html">Seguros de Vivendas</a></li>   
-                <li class="encabezado__lista--items"><a href="../paginas/otrosseguros.html">Seguros Varios</a></li>
+                <li class="encabezado__lista--items boton"><a href="../index.html">Volver al Index</a></li>
+                <li class="encabezado__lista--items boton"><a href="../paginas/automotor.html">Seguros Automotores</a></li>
+                <li class="encabezado__lista--items boton"><a href="../paginas/motos.html">Seguros de Motos</a></li> 
+                <li class="encabezado__lista--items boton"><a href="../paginas/hogar.html">Seguros de Vivendas</a></li>   
+                <li class="encabezado__lista--items boton"><a href="../paginas/otrosseguros.html">Seguros Varios</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main"><!-- Contenido de la pagina -->
-        <section>
-            <img src="../recursos/contacto.jpg" alt="Foto contacto">
-        </section>
-        <section class="contacto">
-            <h1>Contactate con Nosotros</h1>
-            <form> <!-- Esto no lo vimos pero lo sabia, espero que no sea algo malo agregarlo -->
+    <main class="main_contacto"><!-- Contenido de la pagina -->
+        <div class="contactos"></div>
+        <article class="section2__main--titulo1 titulo1">
+            <p>Contactate con Nosotros</p>
+        </article>
+        <form class="encuesta"> <!-- Esto no lo vimos pero lo sabia, espero que no sea algo malo agregarlo -->
                 <p>Nombre y Apellido:</p>
                 <input type="text" required="" name="Nombreyapellido">
                 <p>Telefono:</p>
@@ -34,11 +33,11 @@
                 <p>Email:</p>
                 <input type="email" required="" name="email">
                 <p>Consulta:</p>
-                <textarea></textarea>
+                <textarea class="textarea"></textarea>
                 <p></p>
                 <input class="boton" type="submit" name="Enviar">
                 <input class="boton" type="reset" name="Reset">
-            </form>
+        </form>
         </section>
     </main>
         <aside class="aside"><!-- barra lateral -->
@@ -46,7 +45,7 @@
             <img src="../recursos/ws.png" alt="Whatsapp" class="aside__ws">
         </aside>    
         <footer class="footer">
-            <p> Todos los derechos reservados a nombre de German Escriba</p>
+            <p>(c) Todos los derechos reservados a nombre de German Escriba desde 2022</p>
         </footer><!-- Pie de Pagina -->
     </body>
 </html>

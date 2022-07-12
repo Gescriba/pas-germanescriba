@@ -2,101 +2,540 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 .fondo{
-    background-image: url(../recursos/fondorojo.png);
+    background-color: #a7321c;
 }
-.nav{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+header {
+    background-color: #cc982a;
+    height: auto;   
 }
-.encabezado{
-    background-color: orange;
-    font-family: 'Franklin Gothic Medium';
+
+/*NAVEGACION*/
+
+.encabezado_nav{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    Font-size: 20px;
+    flex-wrap: nowrap;
     position:sticky;
-    top:0px;
+    justify-content: flex-end;
 }
-.encabezado__imagen{    
-    width: 80px;
-    height: 50px;
-    padding: 10px;
-}
-.encabezado__lista{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    list-style: none;
-}
-.encabezado__lista--items{
+.encabezado__imagen{   
+    width: 90px;
+    height: 60px;
     padding: 5px;
 }
-.main{
-    display: flex;  
+.encabezado__lista{
+    display: flex; 
+    list-style: none; 
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
-.aside{
+.encabezado__lista--items{
+    padding: 8px; 
+}
+
+/*INDEX*/
+
+.main_index{
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "fotoperfil titulo1 titulo1 titulo1"
+                        "fotoperfil texto texto texto"
+                        "fotoperfil titulo2 titulo2 titulo2"
+                        "fotoperfil sura galeno atm";
+}
+.texto {
+    grid-area: texto;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.titulo1 {
+    grid-area: titulo1;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.titulo2 {
+    grid-area: titulo2;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.fotoperfil {
+    grid-area: fotoperfil;
+    background-image: url("../recursos/trajes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sura {
+    grid-area: sura;
+    background-image: url("../recursos/Sura.png");
+    background-position:  40% 70%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.sura:hover {
+    transform: scale(1.10,1.10);
+    transition: all 2s;
+} 
+.galeno {
+    grid-area: galeno;
+    background-image: url('../recursos/Galeno.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.galeno:hover {
+    transform: scale(1.10,1.10);
+    transition: all 2s;
+} 
+.atm {
+    grid-area: atm;
+    background-image: url('../recursos/ATM.jpg');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.atm:hover {
+    transform: scale(1.10,1.10);
+    transition: all 2s;
+} 
+
+/*ASIDE*/
+
+aside{
     position:sticky;
     float: right;
-    padding: 100px;
 }
-.aside_texto{
+aside:hover {
+    transform: scale(1.10,1.10);
+    transition: all 2s;
+} 
+.aside_texto {
     font-size: larger;
     margin: 10px;
     cursor: pointer;    
 }
-.aside__ws{ 
+.aside__ws { 
     width: 50px;
     padding: 10px;
     cursor: pointer;
 }
+
+/*FOOTER*/
+
 .footer{
     font-family: 'Franklin Gothic Medium';
-    Font-size: 25px;
-}
-
-<!-- Contenido de la pagina Index-->
-.main__fotoperfil{
-    width: auto;
-    height: auto;
-    padding: 10px;
+    Font-size: 12px;
 }
 .section{
     display: flex;  
 }
-.section2__main--titulo1{
-    font-family: 'Franklin Gothic Medium';
-    Font-size: 50px;
-    text-align: center;
-    padding: 20px;
-}
-.section2__main--titulo2{
-    font-family: 'Franklin Gothic Medium';
-    Font-size: 40px;    
-    text-align: center;
-    padding: 20px;
-}
-.section2__main--aseguradoras{
-    width: 240px;
-    height: 240px;  
-    padding: 0px 70px;
-}
 
-<!-- Contenido de la pagina Automotor-->
-.main__automotor{
-    padding: 10px 10px 10px 10px;   
-    width: 400px;
-    height: 600px;  
-}
+/*Main Automotor*/
 
+.main_automotor {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "autos titulo1 titulo1 titulo1"
+                        "autos texto texto texto"
+                        "autos titulo2 titulo2 titulo2"
+                        "autos lista lista lista";
+}
+.autos{
+    grid-area: autos ;
+    background-image: url('../recursos/autos1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lista {
+    grid-area: lista ;
+    font-size: 20px;
+    list-style: none; 
+    font-family: 'Franklin Gothic Medium';
+    align-items: flex-start;
+    vertical-align: top;
+}
+ul{
+    list-style: none; 
+}
 .contacto{
     text-align: center;
 }
+
+/*Main Motos*/
+
+.main_motos {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "motos motos titulo1 titulo1"
+                        "motos motos texto texto"
+                        "motos motos titulo2 titulo2"
+                        "motos motos ubicacion ubicacion";
+}
+.motos{
+    grid-area: motos ;
+    background-image: url('../recursos/motos.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 10px;
+}
+.ubicacion{
+    grid-area: ubicacion ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/*Main Hogar*/
+
+.main_hogar {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "hogar hogar titulo1 titulo1"
+                        "hogar hogar texto texto"
+                        "hogar hogar titulo2 titulo2"
+                        "hogar hogar lista lista";
+}
+.hogar{
+    grid-area: hogar ;
+    background-image: url('../recursos/casa.jpeg');
+    background-position: 80% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Main Varios*/
+
+.main_varios {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "titulo1 titulo1 video1 video1"
+                        "titulo2 titulo2 video1 video1"
+                        "titulo3 titulo3 video2 video2"
+                        "titulo4 titulo4 video2 video2";
+}
+.video1{
+    grid-area: video1 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video2{
+    grid-area: video2 ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titulo3 {
+    grid-area: titulo3;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.titulo4 {
+    grid-area: titulo4;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+
+/*Main Contacto*/
+
+.main_contacto {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "contactos contactos titulo1 titulo1"
+                        "contactos contactos encuesta encuesta"
+                        "contactos contactos encuesta encuesta"
+                        "contactos contactos encuesta encuesta";
+}
+.contactos {
+    grid-area: contactos ;
+    background-image: url('../recursos/contacto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.encuesta {
+    grid-area: encuesta;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.textarea {
+    height: 66px;
+    width: auto;
+}
 .boton{
     cursor: pointer;
+}
+.boton:hover{
+    transform: scale(1.10,1.10);
+    transition: all 1s;
+}
+
+
+/* MEDIA DE CELULAR*/
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+    .main_index{
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows:  repeat(8, 1fr); 
+        grid-template-areas: "titulo1"
+                            "texto"
+                            "texto"
+                            "texto"
+                            "titulo2"
+                            "sura"
+                            "galeno"
+                            "atm";
+        text-align: center;
+    }
+    .main_automotor {
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, 1fr); 
+        grid-template-areas: "titulo1"
+                            "texto"
+                            "titulo2"
+                            "lista";
+        column-gap: 15px;
+    }
+    .main_motos {
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows:  repeat(6, 1fr); 
+        grid-template-areas: "titulo1"
+                            "texto"
+                            "texto"
+                            "titulo2"
+                            "ubicacion"
+                            "ubicacion";
+        column-gap: 15px;
+    }
+    .ubicacion{
+        grid-area: ubicacion ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .main_hogar {
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows:  repeat(4, 1fr); 
+        grid-template-areas: "titulo1"
+                            "texto"
+                            "titulo2"
+                            "lista";
+        column-gap: 15px;
+    }
+    .main_varios {
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows:  repeat(8, 1fr); 
+        grid-template-areas: "titulo1"
+                            "titulo2"
+                            "video1"
+                            "video1"
+                            "titulo3"
+                            "titulo4"
+                            "video2"
+                            "video2";
+        column-gap: 15px;
+    }
+    .video1{
+        grid-area: video1 ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .video2{
+        grid-area: video2 ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .main_contacto {
+        display: grid;
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, 1fr); 
+        grid-template-areas: "titulo1"
+                            "encuesta"
+                            "encuesta"
+                            "contactos";
+        column-gap: 15px;
+    }
+}
+
+/* MEDIA QUERIE DE TABLET */
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .main_index{
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "fotoperfil titulo1 titulo1"
+                            "fotoperfil texto texto"
+                            "fotoperfil titulo2 titulo2"
+                            "fotoperfil sura galeno"
+                            "fotoperfil atm galeno";
+    }
+    .main_automotor {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "autos titulo1 titulo1"
+                            "autos texto texto"
+                            "autos titulo2 titulo2"
+                            "autos lista lista";
+    }
+    .main_motos {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "motos titulo1 titulo1"
+                            "motos texto texto"
+                            "motos titulo2 titulo2"
+                            "motos ubicacion ubicacion";
+    }
+    .ubicacion{
+        grid-area: ubicacion ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .main_hogar {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "hogar titulo1 titulo1"
+                            "hogar texto texto"
+                            "hogar titulo2 titulo2"
+                            "hogar lista lista";
+    }
+    .main_varios {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "titulo1 video1 video1"
+                            "titulo2 video1 video1"
+                            "titulo3 video2 video2"
+                            "titulo4 video2 video2";
+    }
+    .titulo1 {
+        grid-area: titulo1;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .titulo2 {
+        grid-area: titulo2;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+        vertical-align: top;
+    }  
+    .titulo3 {
+        grid-area: titulo3;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .titulo4 {
+        grid-area: titulo4;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+        vertical-align: top;
+    }    
+    .video1{
+        grid-area: video1 ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .video2{
+        grid-area: video2 ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+    }
+    .main_contacto {
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: "contactos titulo1 titulo1"
+                            "contactos encuesta encuesta"
+                            "contactos encuesta encuesta"
+                            "contactos encuesta encuesta";
+    }
 }
