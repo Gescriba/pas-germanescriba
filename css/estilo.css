@@ -4,14 +4,14 @@
     padding: 0px;
 }
 .fondo{
-    background-color: #a7321c;
+    background-color: #ffffff;
 }
 header {
-    background-color: #cc982a;
+    background-color: goldenrod;
     height: auto;   
 }
 
-/*NAVEGACION*/
+/*NAVEGACION SE MODIFICO PARA USAR EN BOOPSTRAP*/
 
 .encabezado_nav{
     display: flex;
@@ -84,7 +84,7 @@ header {
     background-repeat: no-repeat;
 }
 .sura:hover {
-    transform: rotate(5deg);
+    transform: scale(1.10,1.10);
     transition: all 2s;
 } 
 .galeno {
@@ -110,7 +110,7 @@ header {
     transition: all 2s;
 } 
 .animacion {
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: slidein;
 }
 
@@ -211,7 +211,6 @@ ul{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
     padding: 10px;
 }
 .ubicacion{
@@ -308,15 +307,21 @@ ul{
     text-align: center;
 }
 .textarea {
-    height: 66px;
+    height: 80px;
     width: auto;
+}
+.contacto{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .boton{
     cursor: pointer;
+    background-color: orange;
 }
 .boton:hover{
     transform: scale(1.10,1.10);
     transition: all 1s;
+    background-color: rgba(218, 165, 32, 0.685);
 }
 
 
