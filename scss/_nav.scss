@@ -1,0 +1,26 @@
+/*NAVEGACION SE MODIFICO PARA USAR EN BOOPSTRAP*/
+
+.encabezado_nav{
+    display: flex;
+    flex-wrap: nowrap;
+    position:sticky;
+    justify-content: flex-end;
+}
+.encabezado__imagen{   
+    width: 90px;
+    height: 60px;
+    padding: 5px;
+}
+.encabezado__lista{
+    display: flex; 
+    list-style: none; 
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.encabezado__lista--items{
+    padding: 8px; 
+}
