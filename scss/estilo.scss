@@ -1,0 +1,111 @@
+@import "nav";
+@import "footer";
+@import "mediaquerys";
+@import "aside";
+@import "paginas/automotor";
+@import "paginas/motos";
+@import "paginas/hogar";
+@import "paginas/contacto";
+@import "paginas/otrosseguros";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fondo{
+    background-color: white;
+}
+header {
+    background-color: orange;
+    height: auto;   
+}
+
+
+/*INDEX*/
+
+.main_index{
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "fotoperfil titulo1 titulo1 titulo1"
+                        "fotoperfil texto texto texto"
+                        "fotoperfil titulo2 titulo2 titulo2"
+                        "fotoperfil sura galeno atm";
+
+    .texto {
+        grid-area: texto;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo1 {
+        grid-area: titulo1;
+        font-size: 32px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo2 {
+        grid-area: titulo2;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .fotoperfil {
+        grid-area: fotoperfil;
+        background-image: url("../recursos/trajes.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sura {
+        grid-area: sura;
+        background-image: url("../recursos/Sura.png");
+        background-position:  40% 70%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    .sura:hover {
+        transform: scale(1.10,1.10);
+        transition: all 2s;
+    } 
+    .galeno {
+        grid-area: galeno;
+        background-image: url('../recursos/Galeno.png');
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    .galeno:hover {
+        transform: scale(1.10,1.10);
+        transition: all 2s;
+    } 
+    .atm {
+        grid-area: atm;
+        background-image: url('../recursos/ATM.jpg');
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    .atm:hover {
+        transform: scale(1.10,1.10);
+        transition: all 2s;
+    } 
+    .animacion {
+        animation-duration: 4s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+        margin-left: 100%;
+        width: 300%
+        }
+
+        to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+}

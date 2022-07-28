@@ -1,0 +1,39 @@
+/*Main Hogar*/
+
+.main_hogar {
+display: grid;
+width: 95vw;
+height: 95vh;
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+grid-template-rows: 1fr 1fr 1fr 1fr; 
+grid-template-areas: "hogar hogar titulo1 titulo1"
+                    "hogar hogar texto texto"
+                    "hogar hogar titulo2 titulo2"
+                    "hogar hogar lista lista";
+
+    .texto {
+        grid-area: texto;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo1 {
+        grid-area: titulo1;
+        font-size: 32px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo2 {
+        grid-area: titulo2;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .hogar{
+        grid-area: hogar ;
+        background-image: url('../recursos/casa.jpeg');
+        background-position: 80% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,47 @@
+/*Main Motos*/
+
+.main_motos {
+    display: grid;
+    width: 95vw;
+    height: 95vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "motos motos titulo1 titulo1"
+                        "motos motos texto texto"
+                        "motos motos titulo2 titulo2"
+                        "motos motos ubicacion ubicacion";
+    .texto {
+        grid-area: texto;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo1 {
+        grid-area: titulo1;
+        font-size: 32px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .titulo2 {
+        grid-area: titulo2;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: center;
+    }
+    .motos{
+        grid-area: motos ;
+        background-image: url('../recursos/motos.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+    }
+    .ubicacion{
+        grid-area: ubicacion ;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin: 10px;
+    }
+}

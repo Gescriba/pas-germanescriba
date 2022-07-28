@@ -1,0 +1,62 @@
+/*Main Contacto*/
+
+.main_contacto {
+display: grid;
+width: 95vw;
+height: 95vh;
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+grid-template-rows: 1fr 1fr 1fr 1fr; 
+grid-template-areas: "contactos contactos titulo1 titulo1"
+                    "contactos contactos encuesta encuesta"
+                    "contactos contactos encuesta encuesta"
+                    "contactos contactos encuesta encuesta";
+
+.texto {
+    grid-area: texto;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.titulo1 {
+    grid-area: titulo1;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.titulo2 {
+    grid-area: titulo2;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.contactos {
+    grid-area: contactos ;
+    background-image: url('../recursos/contacto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.encuesta {
+    grid-area: encuesta;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+}
+.textarea {
+    height: 80px;
+    width: auto;
+}
+.contacto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.boton{
+    cursor: pointer;
+    background-color: orange;
+}
+.boton:hover{
+    transform: scale(1.10,1.10);
+    transition: all 1s;
+    background-color: rgba(255, 166, 0, 0.85);
+}
+}
