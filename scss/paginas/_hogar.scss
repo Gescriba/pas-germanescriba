@@ -36,4 +36,15 @@ grid-template-areas: "hogar hogar titulo1 titulo1"
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .lista {
+        grid-area: lista ;
+        font-size: 20px;
+        list-style: none; 
+        font-family: 'Franklin Gothic Medium';
+        align-items: flex-start;
+        vertical-align: top;
+    }
+    ul{
+        list-style: none; 
+    }
 }

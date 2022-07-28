@@ -155,6 +155,15 @@
     background-position: 80% 50%;
     background-size: cover;
     background-repeat: no-repeat; }
+  .main_hogar .lista {
+    grid-area: lista;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium';
+    align-items: flex-start;
+    vertical-align: top; }
+  .main_hogar ul {
+    list-style: none; }
 
 /*Main Contacto*/
 .main_contacto {
