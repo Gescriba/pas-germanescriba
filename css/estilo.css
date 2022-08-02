@@ -582,10 +582,10 @@ header {
   .main_index {
     display: grid;
     width: 95vw;
-    height: 95vh;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "fotoperfil titulo1 titulo1" "fotoperfil texto texto" "fotoperfil titulo2 titulo2" "fotoperfil sura galeno" "fotoperfil atm galeno"; }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "fotoperfil titulo1 titulo1" "fotoperfil texto texto" "fotoperfil texto texto" "fotoperfil texto texto" "fotoperfil titulo2 titulo2" "fotoperfil sura galeno" "fotoperfil atm galeno"; }
   .main_automotor {
     display: grid;
     width: 95vw;
