@@ -12,21 +12,24 @@
                         "motos motos ubicacion ubicacion";
     .texto {
         grid-area: texto;
-        font-size: 16px;
+        font-size: 18px;
         font-family: 'Franklin Gothic Medium';
         text-align: center;
+        margin: auto auto;
     }
     .titulo1 {
         grid-area: titulo1;
         font-size: 32px;
         font-family: 'Franklin Gothic Medium';
         text-align: center;
+        margin: auto auto;
     }
     .titulo2 {
         grid-area: titulo2;
         font-size: 24px;
         font-family: 'Franklin Gothic Medium';
         text-align: center;
+        margin: auto auto;
     }
     .motos{
         grid-area: motos ;
@@ -43,5 +46,6 @@
         background-repeat: no-repeat;
         align-items: center;
         margin: 10px;
+        margin: auto auto;
     }
 }

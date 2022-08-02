@@ -16,18 +16,21 @@ grid-template-areas: "contactos contactos titulo1 titulo1"
     font-size: 16px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
+    margin: auto auto;
 }
 .titulo1 {
     grid-area: titulo1;
     font-size: 32px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
+    margin: auto auto;
 }
 .titulo2 {
     grid-area: titulo2;
     font-size: 24px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
+    margin: auto auto;
 }
 .contactos {
     grid-area: contactos ;
@@ -38,9 +41,10 @@ grid-template-areas: "contactos contactos titulo1 titulo1"
 }
 .encuesta {
     grid-area: encuesta;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
+    margin: 0 auto;
 }
 .textarea {
     height: 80px;
