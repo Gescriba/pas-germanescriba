@@ -31,161 +31,20 @@
 .section {
   display: flex; }
 
-/* MEDIA DE CELULAR*/
-@media (min-width: 320px) and (max-width: 575px) {
-  .main_index {
-    display: grid;
-    width: auto;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "titulo1" "texto" "texto" "texto" "titulo2" "sura" "galeno" "atm";
-    text-align: center; }
-  .main_automotor {
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "titulo1" "texto" "titulo2" "lista" "lista" "lista"; }
-  .main_motos {
-    display: grid;
-    width: auto;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: "titulo1" "texto" "texto" "titulo2" "ubicacion" "ubicacion" "motos"; }
-    .main_motos .ubicacion {
-      grid-area: ubicacion;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-  .main_hogar {
-    display: grid;
-    width: auto;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "titulo1" "texto" "titulo2" "lista" "hogar"; }
-  .main_varios {
-    display: grid;
-    width: auto;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "titulo1" "titulo2" "video1" "video1" "titulo3" "titulo4" "video2" "video2"; }
-    .main_varios .video1 {
-      grid-area: video1;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-    .main_varios .video2 {
-      grid-area: video2;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-  .main_contacto {
-    display: grid;
-    width: auto;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "titulo1" "encuesta" "encuesta" "contactos"; } }
+/* EXTEND*/
+.titulo1, .main_automotor .titulo1, .main_motos .titulo1, .main_hogar .titulo1, .main_contacto .titulo1, .main_varios .titulo1, .main_index .titulo1 {
+  grid-area: titulo1;
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium';
+  text-align: center;
+  margin: auto auto; }
 
-/* MEDIA QUERIE DE TABLET */
-@media (min-width: 576px) and (max-width: 992px) {
-  .main_index {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "fotoperfil titulo1 titulo1" "fotoperfil texto texto" "fotoperfil titulo2 titulo2" "fotoperfil sura galeno" "fotoperfil atm galeno"; }
-  .main_automotor {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "autos titulo1 titulo1" "autos texto texto" "autos titulo2 titulo2" "autos lista lista"; }
-  .main_motos {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "motos titulo1 titulo1" "motos texto texto" "motos titulo2 titulo2" "motos ubicacion ubicacion"; }
-    .main_motos .ubicacion {
-      grid-area: ubicacion;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-  .main_hogar {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "hogar titulo1 titulo1" "hogar texto texto" "hogar titulo2 titulo2" "hogar lista lista"; }
-  .main_varios {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "titulo1 video1 video1" "titulo2 video1 video1" "titulo3 video2 video2" "titulo4 video2 video2"; }
-    .main_varios .titulo1 {
-      grid-area: titulo1;
-      font-size: 20px;
-      font-family: 'Franklin Gothic Medium';
-      text-align: center;
-      vertical-align: bottom; }
-    .main_varios .titulo2 {
-      grid-area: titulo2;
-      font-size: 15px;
-      font-family: 'Franklin Gothic Medium';
-      text-align: center;
-      vertical-align: top; }
-    .main_varios .titulo3 {
-      grid-area: titulo3;
-      font-size: 20px;
-      font-family: 'Franklin Gothic Medium';
-      text-align: center;
-      vertical-align: bottom; }
-    .main_varios .titulo4 {
-      grid-area: titulo4;
-      font-size: 15px;
-      font-family: 'Franklin Gothic Medium';
-      text-align: center;
-      vertical-align: top; }
-    .main_varios .video1 {
-      grid-area: video1;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-    .main_varios .video2 {
-      grid-area: video2;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: auto;
-      height: auto; }
-  .main_contacto {
-    display: grid;
-    width: 95vw;
-    height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "contactos titulo1 titulo1" "contactos encuesta encuesta" "contactos encuesta encuesta" "contactos encuesta encuesta"; } }
+.titulo2, .main_automotor .titulo2, .main_motos .titulo2, .main_hogar .titulo2, .main_contacto .titulo2, .main_varios .titulo2, .main_index .titulo2 {
+  grid-area: titulo2;
+  font-size: 26px;
+  font-family: 'Franklin Gothic Medium';
+  text-align: center;
+  margin: auto auto; }
 
 /*ASIDE*/
 .aside {
@@ -214,18 +73,6 @@
   .main_automotor .texto {
     grid-area: texto;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_automotor .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_automotor .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
     margin: auto auto; }
@@ -262,18 +109,6 @@
     font-family: 'Franklin Gothic Medium';
     text-align: center;
     margin: auto auto; }
-  .main_motos .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_motos .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
   .main_motos .motos {
     grid-area: motos;
     background-image: url("../recursos/motos.jpg");
@@ -301,18 +136,6 @@
   .main_hogar .texto {
     grid-area: texto;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_hogar .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_hogar .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
     margin: auto auto; }
@@ -344,18 +167,6 @@
   .main_contacto .texto {
     grid-area: texto;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_contacto .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_contacto .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
     margin: auto auto; }
@@ -393,18 +204,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "titulo1 titulo1 video1 video1" "titulo2 titulo2 video1 video1" "titulo3 titulo3 video2 video2" "titulo4 titulo4 video2 video2"; }
-  .main_varios .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_varios .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
   .main_varios .video1 {
     grid-area: video1;
     background-position: center;
@@ -452,18 +251,6 @@ header {
   .main_index .texto {
     grid-area: texto;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_index .titulo1 {
-    grid-area: titulo1;
-    font-size: 32px;
-    font-family: 'Franklin Gothic Medium';
-    text-align: center;
-    margin: auto auto; }
-  .main_index .titulo2 {
-    grid-area: titulo2;
-    font-size: 24px;
     font-family: 'Franklin Gothic Medium';
     text-align: center;
     margin: auto auto; }

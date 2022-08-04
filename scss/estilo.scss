@@ -1,6 +1,6 @@
 @import "nav";
 @import "footer";
-@import "mq";
+@import "operador";
 @import "aside";
 @import "paginas/automotor";
 @import "paginas/motos";
@@ -42,18 +42,10 @@ header {
         margin: auto auto;
     }
     .titulo1 {
-        grid-area: titulo1;
-        font-size: 32px;
-        font-family: 'Franklin Gothic Medium';
-        text-align: center;
-        margin: auto auto;
+        @extend .titulo1;
     }
     .titulo2 {
-        grid-area: titulo2;
-        font-size: 24px;
-        font-family: 'Franklin Gothic Medium';
-        text-align: center;
-        margin: auto auto;
+        @extend .titulo2;
     }
     .fotoperfil {
         grid-area: fotoperfil;

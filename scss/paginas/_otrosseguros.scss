@@ -12,18 +12,10 @@
                         "titulo4 titulo4 video2 video2";
 
     .titulo1 {
-        grid-area: titulo1;
-        font-size: 32px;
-        font-family: 'Franklin Gothic Medium';
-        text-align: center;
-        margin: auto auto;
+        @extend .titulo1;
     }
     .titulo2 {
-        grid-area: titulo2;
-        font-size: 24px;
-        font-family: 'Franklin Gothic Medium';
-        text-align: center;
-        margin: auto auto;
+        @extend .titulo2;
     }
         .video1{
         grid-area: video1 ;
